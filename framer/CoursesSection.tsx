@@ -7,12 +7,7 @@ import {
     type CSSProperties,
 } from "react"
 
-/**
- * Skillpath — Courses section (Framer code component)
- *
- * Paste this file into Framer: Assets → Code → New Component
- * Then drop it on the canvas between your hero and footer.
- */
+/** Skillpath courses section — Framer code component */
 
 const BASE_URL = "https://syncsphere-hiv6.onrender.com"
 const COURSES_URL = `${BASE_URL}/assignment/course-data`
@@ -555,8 +550,7 @@ const styles: Record<string, CSSProperties> = {
 }
 
 const css = `
-/* Container queries follow the component width on the Framer canvas,
-   which is more reliable than viewport media queries alone. */
+/* Size the grid from the component width (Framer frame), not only the viewport. */
 .sp-container {
   width: 100%;
   container-type: inline-size;
